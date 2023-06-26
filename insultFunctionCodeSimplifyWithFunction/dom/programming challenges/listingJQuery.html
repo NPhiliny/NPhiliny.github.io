@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>  
+</head>
+<body>
+    <h1>This is my challenge</h1>
+    <ul> task: 
+        <li>create array</li>
+        <li>create for loop</li>
+        <li>create with iqery p for each i in array</li>
+        <li>change h1 with jquery </li>
+        <li>hide methods: fadeIn</li>
+    </ul>
+    
+ <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+ <script>
+var friends = ["Ana", "Jane", "Emily"];
+console.log(friends);
+for ( var i = 0; i < 3; i++) {
+    $("body").append("<p>" + friends[i]+ " " + "smile;)" + "</p>");
+};
+var hText = "Valentin, pls check my tasks, all of them listed below )***";
+$("h1").text(hText);
+$("p:first-of-type").fadeOut(3000).fadeIn(2000);
+$("p:nth-of-type(2)").fadeOut(3500).fadeIn(2000);
+$("p:nth-of-type(3)").fadeOut(4000).fadeIn(2000);
+
+</script>   
+</body>
+</html>
+
+

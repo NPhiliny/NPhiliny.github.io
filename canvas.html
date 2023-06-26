@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    
+    // we  create for loop
+    // for (var i = 0; i < 8; i++) {
+    //     ctx.fillRect(i * 10, i * 10, 10, 10)
+    // };
+    // ctx.fillRect(0, 0, 10, 10);
+    // ctx.fillRect(10, 10, 10, 10);
+    //head
+    ctx.fillRect(50, 20, 50, 50);
+    //neck
+    ctx.fillRect(70, 70, 10, 10);
+    ctx.fillRect(70, 80, 10, 10);
+    //hand
+    ctx.fillRect(0, 90, 150, 10);
+ 
+    //body
+    ctx.fillRect(40, 100, 70, 70);
+    //legs
+    ctx.fillRect(40, 170, 10, 50);
+    ctx.fillRect(100, 170, 10, 50);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<body>
+    <button id = "stop">Stop</button>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+        let Car = function (x, y) {
+        this.x = x;
+        this.y = y;
+        this.speed = 50;
+        this.draw();
+        };
+        Car.prototype.draw = function () {
+            let carHtml = '<img src="https://nostarch.com/images/car.png">';
+            this.carElement = $(carHtml);
+            this.carElement.css({
+                position:"absolute",
+                left: this.x,
+                top: this.y
+            });
+            $("body").append(this.carElement);
+        };
+        Car.prototype.moveRight = function (d) {
+            this.x += d;
+            this.carElement.css({
+                left: this.x,
+                top: this.y
+            });
+        };
+        Car.prototype.moveLeft = function (d) {
+            this.x -= d;
+            this.carElement.css({
+                left: this.x,
+                top: this.y
+        });
+        };
+        Car.prototype.moveUp = function (d) {
+            this.y -= d;
+            this.carElement.css({
+                left: this.x,
+                top: this.y
+        });
+        };
+        Car.prototype.moveDown = function (d) {
+            this.y += d;
+            this.carElement.css({
+                left: this.x,
+                top: this.y
+        });
+        };
+        var tesla = new Car(20, 20);
+        var nissan = new Car(100, 200);
+        let movement = function () {
+            if(window.)
+                let randomN = Math.floor(Math.random() * 6);
+                nissan.moveRight(randomN);
+                let randomT = Math.floor(Math.random() * 6);
+                tesla.moveRight(randomT);
+        };
+        setInterval(movement, 1000);
+        let stop = document.getElementById("stop");
+        stop 
+        </script>
+        
+</body>
+</html>

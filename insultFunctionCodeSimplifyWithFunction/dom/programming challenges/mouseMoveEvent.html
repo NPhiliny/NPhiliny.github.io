@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">animation with jQuery</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+        // we’re passing the handler function directly to the mousemove method. This is a very common way of writing event handlers
+       $("html").mousemove(function (event) {
+            $("#h1").offset({
+                left: event.pageX,
+                top: event.pageY
+            });
+        });
+    </script> 
+</body>
+</html>
+
+
+
